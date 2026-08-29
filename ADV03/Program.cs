@@ -118,6 +118,57 @@ namespace ADV03
 
             #endregion
 
+            #region Exercise03
+            //1.
+            Dictionary<string,string> contacts = new()
+            {
+                ["Ahmed"] = "01089897829",
+                ["Sara"] = "01090457868",
+                ["Ali"] = "01134678900",
+                ["Mariam"] = "01255768970"
+
+            };
+            //2.
+            contacts["Samir"] = "01558977789";
+
+            //3.
+            try
+            {
+                contacts.Add("Samir", "01558977789");
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+            }
+
+            //4.
+            bool canAdd = contacts.TryAdd("Samir", "01558977789");
+            Console.WriteLine($"TryAdd succeeded: {canAdd}");
+
+            //5.
+            bool contactFound = contacts.ContainsKey("Mahmoud");
+            if(!contactFound)
+            {
+                Console.WriteLine("No contact found ");
+            }
+            //6.
+            string phone = contacts.GetValueOrDefault("Mahmoud", "Not Found");
+
+            Console.WriteLine($"Mahmoud: {phone}");
+            //7.
+            foreach (KeyValuePair<string, string> pair in contacts)
+            {
+                Console.Write($"{pair.Key}   ");
+
+            }
+            Console.WriteLine();
+            foreach (KeyValuePair<string, string> pair in contacts)
+            {
+                Console.Write($"{pair.Value}   ");
+
+            }
+
+            #endregion
 
 
 
