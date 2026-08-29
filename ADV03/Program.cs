@@ -185,6 +185,41 @@ namespace ADV03
             // 2 is printed because we made the hashset case isensitive
             // so the first 2 elements are considered the same and the last 2 are the same.
 
+            //4.
+            //HashSet<int> A = new HashSet<int>() { 1, 2, 3, 4, 5 };
+            //HashSet<int> B = new HashSet<int>() { 4, 5, 6, 7, 8 };
+
+            //HashSet<int> union = new HashSet<int>() { 1, 2, 3, 4, 5 };
+            //Console.WriteLine("Union:");
+            //union.UnionWith(B) ;
+            //foreach (int i in union)
+            //    Console.Write($"{i} ");
+
+            //Console.WriteLine();
+
+
+            //HashSet<int> intersection = new HashSet<int>() { 1, 2, 3, 4, 5 };
+            //intersection.IntersectWith(B);
+
+            //Console.WriteLine("Intersection:");
+            //foreach (int i in intersection)
+            //    Console.Write($"{i} ");
+
+
+            //Console.WriteLine();
+
+            //HashSet<int> except = new HashSet<int>() { 1, 2, 3, 4, 5 };
+            //except.ExceptWith(B);
+
+            //Console.WriteLine("Except:");
+            //foreach (int i in except)
+            //    Console.Write($"{i} ");
+
+            //Console.WriteLine();
+            //HashSet<int> subset = new HashSet<int>() { 1, 2};
+            //bool IsSubset = subset.IsSubsetOf(A);
+            //Console.WriteLine($"IS [1,2] SUBSET OF A ? {IsSubset}");
+
 
 
             #endregion
