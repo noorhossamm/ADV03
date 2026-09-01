@@ -255,6 +255,36 @@ namespace ADV03
             // It will return false because the queue is empty so dequeue operation cannot be performed.
             #endregion
 
+            #region Exercise06
+            //Stack<string> browser = new Stack<string>();
+            ////1.
+            //browser.Push("google.com");
+            //browser.Push("github.com");
+            //browser.Push("stackoverflow.com");
+            //browser.Push("youtube.com");
+            //browser.Push("claude.ai");
+            ////2.
+            //Console.WriteLine($"Current page : {browser.Peek()}");
+            ////3.
+            //int back = 3;
+            //while(back > 0 )
+            //{
+            //    string pagePopped = browser.Pop();
+            //    Console.WriteLine($"You leaved page : {pagePopped}");
+            //    back--;
+            //}
+            ////4.
+            //Console.WriteLine($"Current page : {browser.Peek()}");
+            ////5.
+            //browser.Pop();
+            //browser.Pop();
+
+            //bool CanPop = browser.TryPop(out string? pageName);
+            //Console.WriteLine($"Pop successful: {CanPop}");
+            //// It will return false because the stack is empty so pop operation cannot be performed.
+            #endregion
+
+
 
 
 
