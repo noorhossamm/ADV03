@@ -221,6 +221,37 @@ namespace ADV03
             //Console.WriteLine($"IS [1,2] SUBSET OF A ? {IsSubset}");
 
 
+            #region Exercise05
+            //1.
+            Queue<string> reports = new Queue<string>();
+            reports.Enqueue("Report.pdf");
+            reports.Enqueue("Invoice.pdf");
+            reports.Enqueue("Letter.docx");
+            reports.Enqueue("Resume.pdf");
+            reports.Enqueue("Photo.jpg");
+
+            foreach(string report in reports)
+            {
+                Console.WriteLine(report);
+            }
+            Console.WriteLine($"Number of reports: {reports.Count}");
+
+            //2.
+            Console.WriteLine( $"First report: {reports.Peek()}");
+            //3.
+            while(reports.Count >0)
+            {
+                string report = reports.Dequeue();
+                Console.WriteLine($"Printing: {report}");
+            }
+
+            //4.
+            bool CanDequeue = reports.TryDequeue(out string? reportName);
+            Console.WriteLine($"Dequeue successful:{CanDequeue}");
+            // It will return false because the queue is empty so dequeue operation cannot be performed.
+            #endregion
+
+
 
             #endregion
 
